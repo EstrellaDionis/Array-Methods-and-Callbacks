@@ -63,7 +63,7 @@ Use the higher-order function getWinners to do the following:
 
 // we don't care about overtime - just compare points!
 function getWinners(data, getFinalsCB) {
-    return getFinalsCB(data).map(item => item['Home Team Goals'] > item['Away Tean Goals'] ? 
+    return getFinalsCB(data).map(item => item['Home Team Goals'] > item['Away Team Goals'] ? 
     item['Home Team Name'] : item['Away Team Name']);
 }
 console.log('Task 4:', getWinners(fifaData, getFinals));
